@@ -1,0 +1,10 @@
+^C:\USERS\26893\DESKTOP\S071CMAKE-SFML-SNAKE-MAIN\CMAKELISTS.TXT
+setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

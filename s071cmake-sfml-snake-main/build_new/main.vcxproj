@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA72A23A-1ED8-3663-9021-E342822260DE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>main</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">main.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">main.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Path/SFML-3.0.2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying data directory to output directory</Message>
+      <Command>setlocal
+C:\Path\mingw64\bin\cmake.exe -E copy_directory C:/Users/26893/Desktop/s071cmake-sfml-snake-main/data C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Path\SFML-3.0.2\lib\libsfml-graphics-d.a;C:\Path\SFML-3.0.2\lib\libsfml-window-d.a;C:\Path\SFML-3.0.2\lib\libsfml-audio-d.a;C:\Path\SFML-3.0.2\lib\libsfml-system-d.a;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/Debug/main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/Debug/main.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Path/SFML-3.0.2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying data directory to output directory</Message>
+      <Command>setlocal
+C:\Path\mingw64\bin\cmake.exe -E copy_directory C:/Users/26893/Desktop/s071cmake-sfml-snake-main/data C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Path\SFML-3.0.2\lib\libsfml-graphics.a;C:\Path\SFML-3.0.2\lib\libsfml-window.a;C:\Path\SFML-3.0.2\lib\libsfml-audio.a;C:\Path\SFML-3.0.2\lib\libsfml-system.a;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/Release/main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/Release/main.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Path/SFML-3.0.2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying data directory to output directory</Message>
+      <Command>setlocal
+C:\Path\mingw64\bin\cmake.exe -E copy_directory C:/Users/26893/Desktop/s071cmake-sfml-snake-main/data C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Path\SFML-3.0.2\lib\libsfml-graphics-d.a;C:\Path\SFML-3.0.2\lib\libsfml-window-d.a;C:\Path\SFML-3.0.2\lib\libsfml-audio-d.a;C:\Path\SFML-3.0.2\lib\libsfml-system-d.a;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/MinSizeRel/main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/MinSizeRel/main.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Path/SFML-3.0.2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Path\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying data directory to output directory</Message>
+      <Command>setlocal
+C:\Path\mingw64\bin\cmake.exe -E copy_directory C:/Users/26893/Desktop/s071cmake-sfml-snake-main/data C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Path\SFML-3.0.2\lib\libsfml-graphics-d.a;C:\Path\SFML-3.0.2\lib\libsfml-window-d.a;C:\Path\SFML-3.0.2\lib\libsfml-audio-d.a;C:\Path\SFML-3.0.2\lib\libsfml-system-d.a;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/RelWithDebInfo/main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/bin/RelWithDebInfo/main.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\26893\Desktop\s071cmake-sfml-snake-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/26893/Desktop/s071cmake-sfml-snake-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfig.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPack.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Path\mingw64\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/26893/Desktop/s071cmake-sfml-snake-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfig.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPack.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Path\mingw64\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/26893/Desktop/s071cmake-sfml-snake-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfig.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPack.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Path\mingw64\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/26893/Desktop/s071cmake-sfml-snake-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLAudioSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfig.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLGraphicsSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLSystemSharedTargets.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-debug.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets-release.cmake;C:\Path\SFML-3.0.2\lib\cmake\SFML\SFMLWindowSharedTargets.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPack.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Path\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Path\mingw64\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\26893\Desktop\s071cmake-sfml-snake-main\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\26893\Desktop\s071cmake-sfml-snake-main\build_new\ZERO_CHECK.vcxproj">
+      <Project>{1F2F0234-C36D-3C82-8D95-F6CF5188A7A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

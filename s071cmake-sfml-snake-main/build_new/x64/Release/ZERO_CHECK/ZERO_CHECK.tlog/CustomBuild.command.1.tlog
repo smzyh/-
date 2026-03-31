@@ -1,0 +1,10 @@
+^C:\USERS\26893\DESKTOP\S071CMAKE-SFML-SNAKE-MAIN\BUILD_NEW\CMAKEFILES\3C1A5BCB12BE44D83869ACAB72713618\GENERATE.STAMP.RULE
+setlocal
+C:\Path\mingw64\bin\cmake.exe -SC:/Users/26893/Desktop/s071cmake-sfml-snake-main -BC:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/26893/Desktop/s071cmake-sfml-snake-main/build_new/CMakeSFMLProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
